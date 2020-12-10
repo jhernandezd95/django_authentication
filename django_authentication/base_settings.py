@@ -43,8 +43,9 @@ INSTALLED_APPS = [
     'djoser',
     'templated_mail',
     'corsheaders',
+    'drf_yasg',
 
-     'apps.user',
+    'apps.user',
 ]
 
 MIDDLEWARE = [
