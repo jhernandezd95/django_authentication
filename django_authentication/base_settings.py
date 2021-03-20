@@ -169,6 +169,16 @@ EMAIL_USE_SSL = False
 #DOMAIN = 'pet.com'
 #SITE_NAME = 'Pet Website'
 
+SWAGGER_SETTINGS = {
+   'SECURITY_DEFINITIONS': {
+      'Bearer': {
+            'type': 'apiKey',
+            'name': 'Authorization',
+            'in': 'header'
+      }
+   }
+}
+
 REQUESTLOGS = {
     'STORAGE_CLASS': 'requestlogs.storages.LoggingStorage',
     'ENTRY_CLASS': 'requestlogs.entries.RequestLogEntry',
